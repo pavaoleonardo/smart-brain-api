@@ -1,4 +1,4 @@
-# SmartBrain-api - v2
+# SmartBrain-api 
 Final project for Udemy course
 
 1. Clone this repo
