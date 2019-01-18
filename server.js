@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('combined'))
 
 app.get('/', (req, res) => {
-  res.redirect("/", "it´s working")
+  res.send("IT´S WORKING!")
 })
 
 app.post('/signin', signin.signinAuthentication(db, bcrypt))
