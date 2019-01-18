@@ -48,6 +48,6 @@ app.post('/imageurl', auth.requireAuth, (req, res) => {
   image.handleApiCall(req, res)
 })
 
-server.listen(config.port, function () {
-  console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
-});
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`app is running on port ${process.env.PORT}`);
+})
